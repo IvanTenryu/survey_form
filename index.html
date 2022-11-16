@@ -1,0 +1,182 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Service Survey Form</h1>
+    <p id="description" class="desciption text-center">
+      Continue below. Please answer the questions as honestly as possible. We are improving for you.
+    <//p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name
+        <span class="clue">(Or company name)</span>
+      </label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required/>
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your Emai"
+             required/>
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label>
+      <input
+             type="number"
+             name="age"
+             id="number"
+             min="10"
+             max="99"
+             class="form-control"
+             placeholder="Age"/>
+    </div>
+      
+    <div class="form-group">
+      <p>What kind of service did you receive from us?</p>
+      <select id="dropdown" name="service" class="form-control" required>
+        <option disabled selected value>Select one</option>
+        <option value="maintenance">General maintenance</option>
+        <option value="pos">Point Of Sale</option>
+        <option value="security">Security</option>
+        <option value="woodwork">Woodwork</option>
+        <option value="electricity">Electricity</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="waterproofing">Waterproofing</option>
+        <option value="ironworks">Ironworks</option>
+        <option value="brickworks">Brickworks</option>
+      </select>
+    </div>
+      
+    <div class="form-group">
+      <p>Would you recommend us?</p>
+      
+      <label>
+        <input
+               name="user-recommend"
+               value="definitely"
+               type="radio"
+               class="input-radio"
+               checked/>
+        Definitely</label>
+      
+      <label>
+        <input
+               name="user-recommend"
+               value="maybe"
+               type="radio"
+               class="input-radio"/>
+        Maybe</label>
+      
+      <label>
+        <input
+               name="user-recommend"
+               value="not-sure"
+               type="radio"
+               class="input-radio"/>
+        Not sure</label>
+    </div>
+      
+    <div class="form-group">
+      <p>When requesting your quote, were you attended quickly?</p>
+      
+        <label>
+          <input
+                 name="user-quote"
+                 value="yes"
+                 type="radio"
+                 class="input-radio"
+                 checked/>
+          Yes</label>
+      
+        <label>
+          <input
+                 name="user-quote"
+                 value="no"
+                 type="radio"
+                 class="input-radio"/>
+          No</label>
+    </div>
+    
+    <div>
+      <p>
+        What would you say is the best of having hired our services?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      
+      <label>
+        <input
+               name="best-of"
+               value="atention-time"
+               type="checkbox"
+               class="input-checkbox"
+               checked/>
+        Atention time
+      </label>
+      
+      <label>
+        <input
+               name="best-of"
+               value="prices"
+               type="checkbox"
+               class="input-checkbox"/>
+        The prices
+      </label>
+      
+      <label>
+        <input
+               name="best-of"
+               value="build-time"
+               type="checkbox"
+               class="input-checkbox"/>
+        Build time
+      </label>
+      
+      <label>
+        <input
+               name="best-of"
+               value="final-product"
+               type="checkbox"
+               class="input-checkbox"/>
+        The final product
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter you comment here..."/>
+      </textarea>
+    </div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
